@@ -79,7 +79,7 @@
         </div>
 
     </header>
-<!-- 
+
     <main>
         <section class="hero">
             <div class="container">
@@ -151,9 +151,9 @@
                     </div>
                 </div>
             </div>
-        </section> -->
+        </section>
 
-        <!-- <section class="section">
+        <section class="section">
             <div class="container">
                 <h2 class="visually-hidden">Наши преимущества</h2>
                 <ul class="properties">
@@ -203,9 +203,9 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
 
-        <!-- <section class="section work">
+        <section class="section work">
             <div class="container">
                 <h2 class="big-headers">Чем мы занимаемся</h2>
                 <ul class="examples">
@@ -232,14 +232,28 @@
                         
                 </ul>
             </div>
-        </section> -->
-<!-- 
+        </section>
+
         <section class="team section">
             <div class="container">
                 <h2 class="big-headers">Наша команда</h2>
                 <ul class="teammates">
                     <li class="teammates-item">                      
-                        <img src="./images/our_team/demyanenko-min.jpg" alt="Игорь Демьяненко" width="270" height="260">
+                        <picture>
+                            <source 
+                                srcset="./images/Desktop_min/Desktop-team-min.jpg 1x, ./images/Desktop_min/Desktop-team@2x-min.jpg 2x"
+                                media="(min-width: 1200px)"
+                            />
+                            <source 
+                                srcset="./images/Tablet_min/tablet-team-min.jpg 1x, ./images/Tablet_min/tablet-team@2x-min.jpg 2x"
+                                media="(min-width: 768px)"
+                            />
+                            <source 
+                                srcset="./images/Mobile_min/team-mobile-1-min.jpg 1x, ./images/Mobile_min/team-mobile-1@2x-min.jpg 2x"
+                                media="(max-width: 767px)"
+                            />
+                            <img src="./images/Desktop_min/Desktop-team-min.jpg" alt="Игорь Демьяненко" >
+                        </picture>
                         <div class="teammates-block">
                             <h3 class="teammates-block__name">Игорь Демьяненко</h3>
                             <p class="teammates-block_position">Product Designer</p>
@@ -274,7 +288,21 @@
                         
                     </li>
                     <li class="teammates-item">
-                        <img src="./images/our_team/repina-min.jpg" alt="Ольга Репина" width="270" height="260">
+                        <picture>
+                            <source 
+                            srcset="./images/Desktop_min/Desktop-team-1-min.jpg 1x, ./images/Desktop_min/Desktop-team@2x-1-min.jpg 2x"
+                            media="(min-width: 1200px)"
+                        />
+                        <source 
+                            srcset="./images/Tablet_min/tablet-team-1-min.jpg 1x, ./images/Tablet_min/tablet-team@2x-1-min.jpg 2x"
+                            media="(min-width: 768px)"
+                        />
+                        <source 
+                            srcset="./images/Mobile_min/team-mobile-2-min.jpg 1x, ./images/Mobile_min/team-mobile-2@2x-min.jpg 2x"
+                            media="(max-width: 767px)"
+                        />
+                            <img src="./images/our_team/repina-min.jpg" alt="Ольга Репина" >
+                        </picture>
                         <div class="teammates-block">
                             <h3 class="teammates-block__name">Ольга Репина</h3>
                             <p class="teammates-block_position">Frontend Developer</p>
@@ -308,7 +336,24 @@
                         
                     </li>
                     <li class="teammates-item">
-                        <img src="./images/our_team/tarasov-min.jpg" alt="Николай Тарасов" width="270" height="260">
+                        <picture>
+                            <source 
+                            srcset="./images/Desktop_min/Desktop-team-2-min.jpg 1x, ./images/Desktop_min/Desktop-team@2x-2-min.jpg 2x"
+                            media="(min-width: 1200px)"
+                            
+                        />
+                        <source 
+                            srcset="./images/Tablet_min/tablet-team-2-min.jpg 1x, ./images/Tablet_min/tablet-team@2x-2-min.jpg 2x"
+                            media="(min-width: 768px)"
+                            
+                        />
+                        <source 
+                            srcset="./images/Mobile_min/team-mobile-3-min.jpg 1x, ./images/Mobile_min/team-mobile-3@2x-min.jpg 2x"
+                            media="(max-width: 767px)"
+                           
+                        />
+                            <img src="./images/our_team/tarasov-min.jpg" alt="Николай Тарасов" >
+                        </picture>
                         <div class="teammates-block">
                             <h3 class="teammates-block__name">Николай Тарасов</h3>
                             <p class="teammates-block_position">Marketing</p>
@@ -342,7 +387,21 @@
                        
                     </li>
                     <li class="teammates-item">
-                        <img src="./images/our_team/ermakov-min.jpg" alt="Михаил Ермаков" width="270" height="260">
+                        <picture>
+                            <source 
+                            srcset="./images/Desktop_min/Desktop-team-3-min.jpg 1x, ./images/Desktop_min/Desktop-team@2x-3-min.jpg 2x"
+                            media="(min-width: 1200px)"
+                        />
+                        <source 
+                            srcset="./images/Tablet_min/tablet-team-3-min.jpg 1x, ./images/Tablet_min/tablet-team@2x-3-min.jpg 2x"
+                            media="(min-width: 768px)"
+                        />
+                        <source 
+                            srcset="./images/Mobile_min/team-mobile-4-min.jpg 1x, ./images/Mobile_min/team-mobile-4@2x-min.jpg 2x"
+                            media="(max-width: 767px)"
+                        />
+                            <img src="./images/our_team/ermakov-min.jpg" alt="Михаил Ермаков" >
+                        </picture>
                         <div class="teammates-block">
                             <h3 class="teammates-block__name">Михаил Ермаков</h3>
                             <p class="teammates-block_position">UI Designer</p>
@@ -377,8 +436,8 @@
                     </li>                    
                 </ul>
             </div>
-        </section> -->
-        <!-- <section class="section">
+        </section>
+        <section class="section">
             <div class="container">
                 <h2 class="big-headers">Постоянные клиенты</h2>
                 <ul class="clients-menu">
@@ -427,8 +486,8 @@
                 </ul>
             </div>
         </section>
-    </main> -->
-    <!-- <footer>
+    </main>
+    <footer>
         <div class="container container_footer-flex">
             <div>
                 <a href="./index.html" lang="en" class="logo logo_logo-footer"><span class="logo__span">Web</span>Studio</a>
@@ -484,7 +543,7 @@
                 </div>
             </div>
         </div>
-    </footer> -->
+    </footer>
 
     <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>

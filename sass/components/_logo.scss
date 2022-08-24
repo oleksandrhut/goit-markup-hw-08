@@ -1,7 +1,7 @@
 // ============MOBILE==============
 @media screen and (max-width: 1199px){
 .logo
-{
+   {
    color: #000000;
  
    font-family: 'Raleway', sans-serif;
@@ -17,8 +17,20 @@
    {
       color: var(--logo__span);
    }
+   }
+   .logo_logo-footer{
+   text-align: center;
+   display: block;
+ 
+   padding:0px;
+   color: var(--logo_logo-footer);
 }
 }
+
+
+
+
+
 
 @media screen and (min-width: 1200px){
     .logo
@@ -40,7 +52,10 @@
    }
 
    }
-}
+
+  
+ }
+
 
 // .logo
 // {
