@@ -1,9 +1,39 @@
   @media screen and (max-width: 767px){
-  .header-contacts{
+  .header-contacts__mobile{
     display: none;
   }
+
+  .contacts__icon{
+    display: none;
   }
+
   
+  .header-contacts_tel
+  {
+    margin-bottom: 32px;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 40px;
+  
+    letter-spacing: 0.02em;
+    color: var(--background-focus-button);
+  }
+
+  .header-contacts_mail{
+    font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+
+  color: var(--body-color);
+  }
+
+  .contacts-nav{
+    margin-bottom: 64px;
+  }
+}
+  
+
   
   
   // .header-contacts__item{
