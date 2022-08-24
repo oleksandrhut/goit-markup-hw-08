@@ -1,0 +1,234 @@
+
+ 
+  .modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 528px;
+    height: 581px;
+ 
+    padding: 40px;
+ 
+ 
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+ 
+    background-color: var(--background-body);
+ 
+    transform: translate(-50%,-50%) rotateX(0deg) scale(1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+ 
+   
+  }
+ 
+  
+  .close-modal{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+ 
+    display:flex;
+    justify-content: center;
+    align-items: center;
+ 
+    border-radius: 50%;
+    background-color: inherit;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+ 
+    fill: #000000;
+ 
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus ,
+    &:hover
+    {
+      fill: #2196F3 ;
+    }
+
+    
+  }
+ 
+  
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ .modal__description{
+    
+    display: block;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+ 
+    color: #212121;
+ }
+  .modal-form{
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+  .modal-form label {
+    margin-bottom: 4px;
+    display: block;
+    color: var(--body-color);
+ 
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+  }
+    
+ 
+  
+  .modal__form-field{
+    position: relative;
+   
+    margin-bottom: 10px;
+
+    &_last-child{
+      position: relative;
+      
+      margin-bottom: 20px;
+    }
+  }
+ 
+  
+ 
+  .modal__form-icon{
+    position: absolute;
+    bottom: 12px;
+    left: 11px;
+ 
+    fill: var(--titles-color);
+ 
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .modal__form-field>input:focus + &,
+    .modal__form-field>input:hover + &
+    {
+      fill: #2196F3;
+    }
+  }
+ 
+  .modal__form-field>input{
+    padding: 12px 0 12px 42px;
+    width: 448px;
+    height: 40px;
+ 
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    cursor: pointer;
+ 
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus,
+    &:hover {
+      outline: none;
+      border: 1px solid #2196F3;
+      
+    }
+  }
+  
+  
+  
+  
+  .modal-form textarea{
+    
+    padding: 12px 16px;
+   cursor: pointer;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus{
+      outline: none;
+      border: 1px solid #2196F3;
+   
+    }
+  }
+  
+  
+  
+ 
+  .comment-area{
+    display: block;
+    width: 448px;
+    height: 120px;
+    resize: none;
+ 
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;  
+  }
+ 
+  .modal-contract-description{
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 24px;
+   letter-spacing: 0.03em;
+   
+   color: #757575;
+  }
+ 
+  .modal-check-decoration{
+    color: #2196F3;
+    text-decoration-line: underline;
+    margin-left: 4px;
+ 
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+  }
+ 
+  .modal__form-chekbox{
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+ 
+  }
+  
+  .modal__form-chekbox>label{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+ 
+  .check-icon{
+    position: relative;
+    top: -2px;
+    width: 16px;
+    height: 15px;
+    background-size: contain;
+ 
+    margin-right: 8px;
+    background-image: url(../images/svg-icons/Vector.svg);
+ 
+    transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) ,
+    border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .modal__input-chekbox:checked+&{
+      background-image: url(../images/svg-icons/icon\ check.svg);
+      background-color: var(--background-focus-button);
+      border-radius: 2px;
+   
+    }
+  }
+  .modal__input-chekbox{
+    appearance: none;
+  }
+ 
+  .hero-button_modal-button{
+    margin-top: 0px ;
+  }
+ 

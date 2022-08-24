@@ -1,0 +1,75 @@
+// ============MOBILE==============
+@media screen and (max-width: 1199px){
+.logo
+{
+   color: #000000;
+ 
+   font-family: 'Raleway', sans-serif;
+   font-weight: 700;
+   font-size: 24px;
+   line-height: 1.17;
+   letter-spacing: 0.03em;
+
+   // padding-top: 16px;
+   // padding-bottom: 16px;
+
+   &__span
+   {
+      color: var(--logo__span);
+   }
+}
+}
+
+@media screen and (min-width: 1200px){
+    .logo
+{
+   color: #000000;
+ 
+   font-family: 'Raleway', sans-serif;
+   font-weight: 700;
+   font-size: 26px;
+   line-height: 1.19;
+   letter-spacing: 0.03em;
+
+   padding-top: 24px;
+   padding-bottom: 25px;
+
+   &__span
+   {
+      color: var(--logo__span);
+   }
+
+   }
+}
+
+// .logo
+// {
+//    color: #000000;
+ 
+//    font-family: 'Raleway', sans-serif;
+//    font-weight: 700;
+//    font-size: 26px;
+//    line-height: 1.19;
+//    letter-spacing: 0.03em;
+
+//    padding-top: 24px;
+//    padding-bottom: 25px;
+
+//    &__span
+//    {
+//       color: var(--logo__span);
+//    }
+
+// }
+
+
+// // Logo Footer==================
+// .logo_logo-footer
+//  {
+//     display: block;
+  
+//     padding:0px;
+//     color: var(--logo_logo-footer);
+
+//     margin-bottom: 20px;
+//  }
