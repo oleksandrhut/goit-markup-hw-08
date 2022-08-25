@@ -1,11 +1,4 @@
 
-.titles-item
-{
-  
-  flex-basis: calc((100% - 60px) /3 ) ;
-  
-}
-
 .titles-item__link{
   display: block;
   background: var(--background-titles-item);
@@ -34,7 +27,7 @@
   bottom: 0;
   left: 0;
 
-  width: 370px;
+  width: 100%;
   height: 294px;
   display: flex;
   align-items:center;
@@ -95,4 +88,14 @@ ul .titles-description
   border: 1px solid #EEEEEE;
   border-top: none;
   padding: 20px 24px;
+}
+
+
+@media screen and (min-width: 1200px){
+  .titles-item
+  {
+    
+    flex-basis: calc((100% - 60px) /3 ) ;
+    
+  }
 }

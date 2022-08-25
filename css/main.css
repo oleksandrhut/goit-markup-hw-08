@@ -114,6 +114,22 @@ body {
     flex-wrap: wrap;
   }
 }
+@media screen and (max-width: 767px) {
+  .example-menu {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .titles-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 40px;
+  }
+}
 .big-headers {
   font-weight: 700;
   font-size: 36px;
@@ -130,19 +146,6 @@ body {
 
 .team {
   background: var(--background-teammates);
-}
-
-.example-menu {
-  display: flex;
-  justify-content: center;
-  gap: 8px;
-}
-
-.titles-menu {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  margin-top: 50px;
 }
 
 footer {
@@ -655,10 +658,6 @@ footer {
   fill: currentColor;
 }
 
-.titles-item {
-  flex-basis: calc((100% - 60px) / 3);
-}
-
 .titles-item__link {
   display: block;
   background: var(--background-titles-item);
@@ -679,7 +678,7 @@ footer {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 370px;
+  width: 100%;
   height: 294px;
   display: flex;
   align-items: center;
@@ -721,6 +720,11 @@ ul .titles-description {
   padding: 20px 24px;
 }
 
+@media screen and (min-width: 1200px) {
+  .titles-item {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+}
 .social-menu {
   display: flex;
   justify-content: center;

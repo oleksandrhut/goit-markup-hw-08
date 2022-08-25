@@ -14,33 +14,71 @@
 </head>
 <body>
     <header class="page-header">
+        
         <div class="container container_header-container">
-            <nav class="header-nav-container">
-                <a href="./index.html" lang="en" class="logo"><span class="logo__span">Web</span>Studio</a>
-                    <ul class="nav-menu">
-                            <li class="nav-menu__item nav-menu__item-location"><a href="./index.html" class="nav-menu__link" >Студия</a></li>
-                            <li class="nav-menu__item"><a href="./portfolio.html" class="nav-menu__link nav-menu__link-current" >Портфолио</a></li>
-                            <li class="nav-menu__item"><a href="" class="nav-menu__link">Контакты</a></li>
-                    </ul>
-            </nav>
-            <ul class="header-contacts">
-                <li class="header-contacts__item">
-                    
-                    <a href="mailto:info@devstudio.com" class="contacts"> 
-                        <svg class="contacts__icon contacts__icon_envelope">
-                        <use href="./images/icons.svg#icon-envelope"></use>
-                    </svg>
-                    info@devstudio.com</a></li>
-                <li class="header-contacts__item">
-                    
-                    <a href="tel:+380961111111" class="contacts">
-                        <svg class="contacts__icon contacts__icon_smartfone">
-                            <use href="./images/icons.svg#icon-smartphone"></use>
-                        </svg>
-                        +38 096 111 11 11</a></li>
-                </ul>
+             <nav class="header-nav-container">
+                     <a href="./index.html" lang="en" class="logo"><span class="logo__span">Web</span>Studio</a>
+                     <ul class="nav-menu nav-menu__mobile">
+                             <li class="nav-menu__item nav-menu__item-location"><a href="./index.html" class="nav-menu__link ">Студия</a></li>
+                             <li class="nav-menu__item"><a href="./portfolio.html" class="nav-menu__link nav-menu__link-current">Портфолио</a></li>
+                             <li class="nav-menu__item"><a href="" class="nav-menu__link">Контакты</a></li>
+                     </ul>
+             </nav>
+             <button type="button" class="mobile-menu-open" data-menu-open>
+                 <svg class="mobile-menu-open__icon" width="40" height="40">
+                   <use href="./images/icons.svg#burger-menu"></use>
+                 </svg>
+               </button>
+             <ul class="header-contacts header-contacts__mobile">
+             <li class="header-contacts__item">
+                 
+                 <a href="mailto:info@devstudio.com" class="contacts"> 
+                     <svg class="contacts__icon contacts__icon_envelope">
+                     <use href="./images/icons.svg#icon-envelope"></use>
+                 </svg>
+                 info@devstudio.com</a></li>
+             <li class="header-contacts__item">
+                 
+                 <a href="tel:+380961111111" class="contacts">
+                     <svg class="contacts__icon contacts__icon_smartfone">
+                         <use href="./images/icons.svg#icon-smartphone"></use>
+                     </svg>
+                     +38 096 111 11 11</a></li>
+             </ul>
         </div>
-    </header>
+        <div class="mobile-menu" data-menu>
+         <div class="container mobile-menu__container">
+           <button class="mobile-menu__close-btn" data-menu-close>
+             <svg class="mobile-menu__close-icon" width="40" height="40">
+               <use href="./images/icons.svg#icon-close-black"></use>
+             </svg>
+           </button>
+             <ul class="nav-menu">
+                 <li class="nav-menu__item nav-menu__item-location"><a href="./index.html" class="nav-menu__link nav-menu__link-current">Студия</a></li>
+                 <li class="nav-menu__item"><a href="./portfolio.html" class="nav-menu__link">Портфолио</a></li>
+                 <li class="nav-menu__item"><a href="" class="nav-menu__link">Контакты</a></li>
+         </ul>
+         <ul class="header-contacts contacts-nav">
+             <li class="header-contacts_tel">
+                 
+                 <a href="tel:+380961111111" class="contacts">
+                     +38 096 111 11 11</a></li>
+             <li class="header-contacts_mail">
+                 
+                 <a href="mailto:info@devstudio.com" class="contacts"> 
+                 info@devstudio.com</a></li>
+           </ul>
+          
+               <ul class="mobile-social_list">
+                 <li class="mobile-social_item"><a href="" class="mobile-social_link">Instagram</a></li>
+                 <li class="mobile-social_item"><a href="" class="mobile-social_link">Twitter</a></li>
+                 <li class="mobile-social_item"><a href="" class="mobile-social_link">Facebook</a></li>
+                 <li class="mobile-social_item"><a href="" class="mobile-social_link" >LinkedIn</a></li>
+               </ul>
+           
+         </div>
+ 
+     </header>
 
     <main>
 
@@ -59,7 +97,21 @@
                         <li class="titles-item">
                            <a href="" class="titles-item__link"> 
                                 <div class="titles-overlay">
-                                    <img src="./images/portfolio/techno-crjak-min.jpg" alt="пример страницы веб-сайта" width="370" height="294">
+                                    <picture>
+                                        <source 
+                                            srcset="./images/Desktop_min/Desktop-example-min.jpg 1x, ./images/Desktop_min/Desktop-example@2x-min.jpg 2x"
+                                            media="(min-width: 1200px)"
+                                        />
+                                        <source 
+                                            srcset="./images/Tablet_min/tablet-example-min.jpg 1x, ./images/Tablet_min/tablet-example@2x-min.jpg 2x"
+                                            media="(min-width: 768px)"
+                                        />
+                                        <source 
+                                            srcset="./images/Mobile_min/Mobile-example-min.jpg 1x, ./images/Mobile_min/Mobile-example@2x-min.jpg 2x"
+                                            media="(max-width: 767px)"
+                                        />
+                                        <img src="./images/portfolio/techno-crjak-min.jpg" alt="пример страницы веб-сайта" >
+                                    </picture>
                                     <div class="titles-overlay__curtain">
                                         <p class="titles-overlay__description">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
                                             получить исчерпывающие сведения о компании или частном лице.</p>
@@ -74,7 +126,21 @@
                         <li class="titles-item">
                             <a href="" class="titles-item__link">
                                <div class="titles-overlay">
-                                    <img src="./images/portfolio/orlean-vs-star-min.jpg" alt="пример постера" width="370" height="294">
+                                    <picture>
+                                        <source 
+                                        srcset="./images/Desktop_min/Desktop-example-1-min.jpg 1x, ./images/Desktop_min/Desktop-example@2x-1-min.jpg 2x"
+                                        media="(min-width: 1200px)"
+                                    />
+                                    <source 
+                                        srcset="./images/Tablet_min/tablet-example-1-min.jpg 1x, ./images/Tablet_min/tablet-example@2x-1-min.jpg 2x"
+                                        media="(min-width: 768px)"
+                                    />
+                                    <source 
+                                        srcset="./images/Mobile_min/Mobile-example-1-min.jpg 1x, ./images/Mobile_min/Mobile-example@2x-1-min.jpg 2x"
+                                        media="(max-width: 767px)"
+                                    />
+                                        <img src="./images/portfolio/orlean-vs-star-min.jpg" alt="пример постера" >
+                                    </picture>
                                     <div class="titles-overlay__curtain">
                                         <p class="titles-overlay__description">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
                                             получить исчерпывающие сведения о компании или частном лице.</p>
@@ -89,7 +155,21 @@
                         <li class="titles-item">
                             <a href="" class="titles-item__link">
                                 <div class="titles-overlay">
-                                    <img src="./images/portfolio/seafood-min.jpg" alt="приложение ресторана" width="370" height="294">
+                                    <picture>
+                                        <source 
+                                        srcset="./images/Desktop_min/Desktop-example-2-min.jpg 1x, ./images/Desktop_min/Desktop-example@2x-2-min.jpg 2x"
+                                        media="(min-width: 1200px)"
+                                    />
+                                    <source 
+                                        srcset="./images/Tablet_min/tablet-example-2-min.jpg 1x, ./images/Tablet_min/tablet-example@2x-2-min.jpg 2x"
+                                        media="(min-width: 768px)"
+                                    />
+                                    <source 
+                                        srcset="./images/Mobile_min/Mobile-example-2-min.jpg 1x, ./images/Mobile_min/Mobile-example@2x-2-min.jpg 2x"
+                                        media="(max-width: 767px)"
+                                    />
+                                        <img src="./images/portfolio/seafood-min.jpg" alt="приложение ресторана" >
+                                    </picture>
                                     <div class="titles-overlay__curtain">
                                         <p class="titles-overlay__description">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
                                             получить исчерпывающие сведения о компании или частном лице.</p>
@@ -104,7 +184,22 @@
                         <li class="titles-item">
                             <a href="" class="titles-item__link">
                                 <div class="titles-overlay">
-                                    <img src="./images/portfolio/prime-min.jpg" alt="логотип проекта" width="370" height="294">
+                                    <picture>
+                                        <picture>
+                                            <source 
+                                            srcset="./images/Desktop_min/Desktop-example-3-min.jpg 1x, ./images/Desktop_min/Desktop-example@2x-3-min.jpg 2x"
+                                            media="(min-width: 1200px)"
+                                            />
+                                            <source 
+                                                srcset="./images/Tablet_min/tablet-example-3-min.jpg 1x, ./images/Tablet_min/tablet-example@2x-3-min.jpg 2x"
+                                                media="(min-width: 768px)"
+                                            />
+                                            <source 
+                                                srcset="./images/Mobile_min/Mobile-example-3-min.jpg 1x, ./images/Mobile_min/Mobile-example@2x-3-min.jpg 2x"
+                                                media="(max-width: 767px)"
+                                            />
+                                        <img src="./images/portfolio/prime-min.jpg" alt="логотип проекта" >
+                                    </picture>
                                     <div class="titles-overlay__curtain">
                                         <p class="titles-overlay__description">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
                                             получить исчерпывающие сведения о компании или частном лице.</p>
@@ -119,7 +214,22 @@
                         <li class="titles-item">
                             <a href="" class="titles-item__link">
                                 <div class="titles-overlay">
-                                    <img src="./images/portfolio/boxes-min.jpg" alt="логотип приложения" width="370" height="294">
+                                    <picture>
+                                        <source 
+                                        srcset="./images/Desktop_min/Desktop-example-4-min.jpg 1x, ./images/Desktop_min/Desktop-example@2x-4-min.jpg 2x"
+                                        media="(min-width: 1200px)"
+                                        />
+                                        <source 
+                                            srcset="./images/Tablet_min/tablet-example-4-min.jpg 1x, ./images/Tablet_min/tablet-example@2x-4-min.jpg 2x"
+                                            media="(min-width: 768px)"
+                                        />
+                                        <source 
+                                            srcset="./images/Mobile_min/Mobile-example-4-min.jpg 1x, ./images/Mobile_min/Mobile-example@2x-4-min.jpg 2x"
+                                            media="(max-width: 767px)"
+                                        />
+                                        
+                                        <img src="./images/portfolio/boxes-min.jpg" alt="логотип приложения" >
+                                    </picture>
                                     <div class="titles-overlay__curtain">
                                         <p class="titles-overlay__description">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
                                             получить исчерпывающие сведения о компании или частном лице.</p>
@@ -134,7 +244,22 @@
                         <li class="titles-item">
                             <a href="" class="titles-item__link">
                                 <div class="titles-overlay"> 
-                                    <img src="./images/portfolio/no-borders-min.jpg" alt="пример страницы вебсайта" width="370" height="294" >
+                                    <picture>
+                                        <source 
+                                        srcset="./images/Desktop_min/Desktop-example-5-min.jpg 1x, ./images/Desktop_min/Desktop-example@2x-5-min.jpg 2x"
+                                        media="(min-width: 1200px)"
+                                        />
+                                        <source 
+                                            srcset="./images/Tablet_min/tablet-example-5-min.jpg 1x, ./images/Tablet_min/tablet-example@2x-5-min.jpg 2x"
+                                            media="(min-width: 768px)"
+                                        />
+                                        <source 
+                                            srcset="./images/Mobile_min/Mobile-example-5-min.jpg 1x, ./images/Mobile_min/Mobile-example@2x-5-min.jpg 2x"
+                                            media="(max-width: 767px)"
+                                        />
+                                        
+                                        <img src="./images/portfolio/no-borders-min.jpg" alt="пример страницы вебсайта"  >
+                                    </picture>
                                     <div class="titles-overlay__curtain">
                                         <p class="titles-overlay__description">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
                                             получить исчерпывающие сведения о компании или частном лице.</p>
@@ -149,7 +274,22 @@
                         <li class="titles-item">
                             <a href="" class="titles-item__link">
                                 <div class="titles-overlay">
-                                    <img src="./images/portfolio/limited-edition-min.jpg" alt="пример дизайна для издания" width="370" height="294">
+                                    <picture>
+                                        <source 
+                                        srcset="./images/Desktop_min/Desktop-example-6-min.jpg 1x, ./images/Desktop_min/Desktop-example@2x-6-min.jpg 2x"
+                                        media="(min-width: 1200px)"
+                                        />
+                                        <source 
+                                            srcset="./images/Tablet_min/tablet-example-6-min.jpg 1x, ./images/Tablet_min/tablet-example@2x-6-min.jpg 2x"
+                                            media="(min-width: 768px)"
+                                        />
+                                        <source 
+                                            srcset="./images/Mobile_min/Mobile-example-6-min.jpg 1x, ./images/Mobile_min/Mobile-example@2x-6-min.jpg 2x"
+                                            media="(max-width: 767px)"
+                                        />
+                                        
+                                        <img src="./images/portfolio/limited-edition-min.jpg" alt="пример дизайна для издания" >
+                                    </picture>
                                     <div class="titles-overlay__curtain">
                                         <p class="titles-overlay__description">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
                                             получить исчерпывающие сведения о компании или частном лице.</p>
@@ -164,7 +304,22 @@
                         <li class="titles-item">
                             <a href="" class="titles-item__link">
                                 <div class="titles-overlay">
-                                    <img src="./images/portfolio/lab-min.jpg" alt="логотип проекта" width="370" height="294">
+                                    <picture>
+                                        <source 
+                                        srcset="./images/Desktop_min/Desktop-example-7-min.jpg 1x, ./images/Desktop_min/Desktop-example@2x-7-min.jpg 2x"
+                                        media="(min-width: 1200px)"
+                                        />
+                                        <source 
+                                            srcset="./images/Tablet_min/tablet-example-7-min.jpg 1x, ./images/Tablet_min/tablet-example@2x-7-min.jpg 2x"
+                                            media="(min-width: 768px)"
+                                        />
+                                        <source 
+                                            srcset="./images/Mobile_min/Mobile-example-7-min.jpg 1x, ./images/Mobile_min/Mobile-example@2x-7-min.jpg 2x"
+                                            media="(max-width: 767px)"
+                                        />
+                                        
+                                        <img src="./images/portfolio/lab-min.jpg" alt="логотип проекта" >
+                                    </picture>
                                     <div class="titles-overlay__curtain">
                                         <p class="titles-overlay__description">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
                                             получить исчерпывающие сведения о компании или частном лице.</p>
@@ -179,7 +334,23 @@
                         <li class="titles-item">
                             <a href="" class="titles-item__link">
                                 <div class="titles-overlay">
-                                    <img src="./images/portfolio/growing_business-min.jpg" alt="главная страница приложения" width="370" height="294">
+                                    <picture>
+                                        <source 
+                                        srcset="./images/Desktop_min/Desktop-example-8-min.jpg 1x, ./images/Desktop_min/Desktop-example@2x-8-min.jpg 2x"
+                                        media="(min-width: 1200px)"
+                                        />
+                                        <source 
+                                            srcset="./images/Tablet_min/tablet-example-8-min.jpg 1x, ./images/Tablet_min/tablet-example@2x-8-min.jpg 2x"
+                                            media="(min-width: 768px)"
+                                        />
+                                        <source 
+                                            srcset="./images/Mobile_min/Mobile-example-8-min.jpg 1x, ./images/Mobile_min/Mobile-example@2x-8-min.jpg 2x"
+                                            media="(max-width: 767px)"
+                                        />
+                                        
+                                       
+                                        <img src="./images/portfolio/growing_business-min.jpg" alt="главная страница приложения" >
+                                    </picture>
                                     <div class="titles-overlay__curtain">
                                         <p class="titles-overlay__description">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
                                             получить исчерпывающие сведения о компании или частном лице.</p>
@@ -244,20 +415,22 @@
             </div>
             <div class="sign-up">
                 <p class="sign-up__title">Подпишитесь на рассылку</p>
-                <div class="sign-up__form-block">
-                    <form action="">
-                        <input class="sign-up__input" type="email" placeholder="E-mail">
-    
+                <div >
+                    <form action="" class="sign-up__form-block">
+                        <input class="sign-up__input" type="email" placeholder="E-mail" required>
+                        <button type="submit" class="hero-button hero-button_sign-up-button">
+                            <span>Подписаться</span>
+                            <svg class="sign-up__icon">
+                                <use href="./images/icons.svg#icon-send"></use>
+                        </button>
                     </form>
-                    <button type="button" class="hero-button hero-button_sign-up-button">
-                        <span>Подписаться</span>
-                        <svg class="sign-up__icon">
-                            <use href="./images/icons.svg#icon-send"></use>
-                    </button>
+                    
                 </div>
             </div>
         </div>
     </footer>
     
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
 </body>
 </html>

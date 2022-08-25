@@ -68,8 +68,25 @@ body
 
 }
 
+.example-menu{
+   display: flex;
+   justify-content:flex-start;
+   flex-wrap: wrap;
+   gap: 8px;
 
 }
+
+.titles-menu{
+   display: flex;
+   flex-wrap: wrap;
+   gap: 30px;
+
+   margin-top: 40px;
+}
+}
+
+
+
 
 // .hero
 // {
@@ -163,16 +180,16 @@ body
 // }
 
 // Menu Portfolio============================
-.example-menu{
-   display: flex;
-   justify-content: center;
-   gap: 8px;
+// .example-menu{
+//    display: flex;
+//    justify-content: center;
+//    gap: 8px;
 
-}
-.titles-menu{
-   display: flex;
-   flex-wrap: wrap;
-   gap: 30px;
+// }
+// .titles-menu{
+//    display: flex;
+//    flex-wrap: wrap;
+//    gap: 30px;
 
-   margin-top: 50px;
-}
+//    margin-top: 50px;
+// }
