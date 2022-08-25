@@ -17,7 +17,7 @@ body
    background-size: cover;
    margin-left: auto;
    margin-right: auto;
-   width: 480;
+   width: 480px;
    height: 400px;
    padding-top: 118px;
    padding-bottom: 118px;
@@ -85,7 +85,94 @@ body
 }
 }
 
+@media screen and (min-width: 768px){
+   .hero
+{
+   background: var(--background-hero);
+   background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/Tablet_min/tablet-hero-min.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   margin-left: auto;
+   margin-right: auto;
+   width: 768px;
+   height: 400px;
+   padding-top: 118px;
+   padding-bottom: 118px;
+}
 
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+   .hero{
+    background-image:  linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/Tablet_min/tablet-hero@2x-min.jpg);
+  }
+}
+
+.hero-title
+{
+   
+   font-weight: 900;
+   font-size: 26px;
+   line-height: 1.62;
+   letter-spacing: 0.06em;
+   text-transform: uppercase;
+
+   color: var(--title-hero);
+
+   width: 360px;
+   margin-left: auto;
+   margin-right: auto;
+   text-align: center;
+  
+
+}
+
+.section
+{
+   padding: 60px 0;
+}
+.properties{
+   display: flex;
+   flex-wrap: wrap;
+   gap: 30px;
+   }
+
+   .work {
+      display: none;
+   }
+
+   .teammates{
+         display: flex;
+         gap:30px;
+         flex-wrap: wrap;
+      
+      }
+      
+.clients-menu {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap:30px;
+   flex-wrap: wrap;
+
+}
+
+.example-menu{
+   display: flex;
+   justify-content:flex-start;
+   flex-wrap: wrap;
+   gap: 8px;
+
+}
+
+.titles-menu{
+   display: flex;
+   flex-wrap: wrap;
+   gap: 30px;
+
+   margin-top: 40px;
+}
+}
 
 
 // .hero
