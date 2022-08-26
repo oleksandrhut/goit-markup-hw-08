@@ -52,6 +52,8 @@ a {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 body {
@@ -70,7 +72,7 @@ body {
     background-size: cover;
     margin-left: auto;
     margin-right: auto;
-    width: 480px;
+    max-width: 767px;
     height: 400px;
     padding-top: 118px;
     padding-bottom: 118px;
@@ -370,30 +372,22 @@ footer {
   }
   .mobile-social_list {
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    margin-right: auto;
+    flex-wrap: wrap;
   }
   .mobile-social_item {
     position: relative;
-    margin-left: 20px;
+    padding: 0 10px;
     font-weight: 500;
     font-size: 18px;
     line-height: 1.22px;
     letter-spacing: 0.02em;
     color: #2196F3;
   }
-  .mobile-social_item:not(:first-child)::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: -10px;
-    display: block;
-    height: 22px;
-    width: 1px;
-    border-radius: 2px;
-    transform: translate(0, 50%);
-    background-color: var(--background-focus-button);
+  .mobile-social_item:first-child {
+    padding-left: 0;
+  }
+  .mobile-social_item:not(:last-child) {
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
   }
 }
 @media screen and (min-width: 768px) {
@@ -492,6 +486,12 @@ footer {
   .contacts__icon_smartfone {
     width: 10px;
     height: 16px;
+  }
+}
+@media screen and (max-width: 479px) {
+  .container {
+    padding-right: 15px;
+    padding-left: 15px;
   }
 }
 @media screen and (min-width: 480px) {
