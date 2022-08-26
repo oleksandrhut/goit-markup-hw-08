@@ -90,7 +90,17 @@ ul .titles-description
   padding: 20px 24px;
 }
 
+@media screen and (min-width: 768px){
+  .titles-item
+  {
+    
+    flex-basis: calc((100% - 30px) /2 ) ;
+    
+  }
+}
 
+
+// ===========================DESKTOP==========================
 @media screen and (min-width: 1200px){
   .titles-item
   {

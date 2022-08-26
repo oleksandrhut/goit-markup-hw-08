@@ -7,7 +7,7 @@ body
     letter-spacing: 0.03em;
     
 }
-
+// ===================MOBILE================================
 @media screen and (max-width: 767px){
    .hero
 {
@@ -85,6 +85,7 @@ body
 }
 }
 
+// =============================TABLET======================
 @media screen and (min-width: 768px){
    .hero
 {
@@ -159,7 +160,7 @@ body
 
 .example-menu{
    display: flex;
-   justify-content:flex-start;
+   justify-content:center;
    flex-wrap: wrap;
    gap: 8px;
 
