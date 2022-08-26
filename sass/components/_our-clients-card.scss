@@ -47,9 +47,16 @@
 }
 }
 
+//==========================DESKTOP================
 
-
-
+@media screen and (min-width: 1199px){
+   
+   .clients-item__link {
+      width: 170px;
+      height: 92px;
+      
+   }
+}
 
 
 // .clients-item__link {

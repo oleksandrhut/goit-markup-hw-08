@@ -1,4 +1,4 @@
-
+//========================MOBILE==============
  @media screen and (max-width: 767px){
 
  .properties-element__title
@@ -42,6 +42,7 @@
  
  }
  
+//=========================TABLET===================
  @media screen and (min-width: 768px){
     .properties-element {
     flex-basis: calc((100% - 30px) / 2);
@@ -88,7 +89,55 @@
  
  
  
+ //=========================DESKTOP===================
+ @media screen and (min-width: 1200px){
+   
+ .properties-element {
+    flex-basis: calc((100% - 90px) / 4);
+ }
  
+ 
+ .properties-element__title
+ {
+    
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    
+    text-transform: uppercase;
+ 
+    color: var(--titles-color);
+    text-align: left;
+   
+    margin-top: 30px;
+ }
+ 
+ .properties-element__description
+ {
+   
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+ 
+    margin-top: 10px;
+    
+    
+    
+ }
+ 
+ .properties-element__image{
+    background-color: var(--background-button);
+    width: 270px;
+    height: 120px;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+ }
+ 
+ }
+
  
  
 //  .properties-element {

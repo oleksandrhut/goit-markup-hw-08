@@ -15,7 +15,7 @@
         padding-bottom: 10px;
      }
 }
-
+// =========================TABLET===================
 @media screen and (min-width: 768px){
     .page-header{
         height: 80px;
@@ -31,11 +31,6 @@
         
      }
 
-     .container_header-container{
-        display: flex;
-        align-items: center;
-        
-     }
      
      .header-nav-container{
         display: flex;
@@ -55,25 +50,27 @@
 
 
 
-
-// .page-header{
-//     height: 80px;
-//     border-bottom: 1px solid #ECECEC;;
+// =================DESKTOP======================
+@media screen and (min-width: 1199px){
+.page-header{
+    height: 80px;
+    border-bottom: 1px solid #ECECEC;
  
-//  }
-//  .container_header-container{
-//     display: flex;
-//     align-items: center;
+ }
+ .container_header-container{
+    display: flex;
+    align-items: center;
     
-//  }
+ }
 
-//  .header-nav-container{
-//     display: flex;
-//     align-items: center;
-//  }
-//  .header-contacts {
-//     display: flex;
-//     align-items: center;
-//     margin-left: auto;
-//  }
- 
+ .header-nav-container{
+    display: flex;
+    align-items: center;
+ }
+ .header-contacts {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-left: auto;
+ }
+}

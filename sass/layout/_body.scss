@@ -175,6 +175,95 @@ body
 }
 }
 
+// ========================DESKTOP====================
+@media screen and (min-width: 1200px){
+.hero
+{
+   background: var(--background-hero);
+   background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/Desktop_min/Desktop-bg-min.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   margin-left: auto;
+   margin-right: auto;
+   width: 1600px;
+   height: 600px;
+   padding-top: 200px;
+   padding-bottom: 200px;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+   .hero{
+    background-image:  linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/Desktop_min/Desktop-bg@2x-min.jpg);
+  }
+}
+
+.hero-title
+{
+   
+   font-weight: 900;
+   font-size: 44px;
+   line-height: 1.36;
+   letter-spacing: 0.06em;
+   text-transform: uppercase;
+
+   color: var(--title-hero);
+
+   width: 696px;
+   margin-left: auto;
+   margin-right: auto;
+   text-align: center;
+  
+
+}
+
+.section
+{
+   padding: 94px 0;
+}
+
+.work {
+   display: block;
+}
+
+
+.properties{
+    display: flex;
+    
+    gap: 30px;
+ }
+ 
+
+.work {
+   padding-top: 0;
+}
+
+.clients-menu {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap:30px
+}
+
+// Menu Portfolio============================
+.example-menu{
+   display: flex;
+   justify-content: center;
+   gap: 8px;
+
+}
+.titles-menu{
+   display: flex;
+   flex-wrap: wrap;
+   gap: 30px;
+
+   margin-top: 50px;
+}
+}
+
+
+
 
 // .hero
 // {

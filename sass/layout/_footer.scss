@@ -15,15 +15,13 @@ footer
   }
  }
 
+// ===================DESKTOP=============
+
+@media screen and (min-width: 1199px){
+   .container_footer-flex {
+    display: flex;
+    align-items: baseline;
+  }
+}
 
 
-
-
-
-
-
-
-//  .container_footer-flex {
-//     display: flex;
-//     align-items: baseline;
-//   }
