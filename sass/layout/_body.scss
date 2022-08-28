@@ -7,7 +7,48 @@ body
     letter-spacing: 0.03em;
     
 }
+
+@media screen and (max-width: 479px){
+   .hero-title{
+      font-weight: 900;
+      font-size: 26px;
+      line-height: 1.62;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+   
+      color: var(--title-hero);
+   
+      width: 300px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+     
+   
+   }
+}
+
 // ===================MOBILE================================
+@media screen and (min-width: 479px) and (max-width: 767px){
+   .hero-title
+   {
+      
+      font-weight: 900;
+      font-size: 26px;
+      line-height: 1.62;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+   
+      color: var(--title-hero);
+   
+      width: 360px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+     
+   
+   }
+}
+
 @media screen and (max-width: 767px){
    .hero
 {
@@ -31,24 +72,19 @@ body
   }
 }
 
-.hero-title
+.big-headers
 {
    
-   font-weight: 900;
-   font-size: 26px;
-   line-height: 1.62;
-   letter-spacing: 0.06em;
-   text-transform: uppercase;
-
-   color: var(--title-hero);
-
-   width: 360px;
-   margin-left: auto;
-   margin-right: auto;
+   font-weight: 700;
+   font-size: 28px;
+   line-height: 1.17;
    text-align: center;
-  
 
+   color: var(--titles-color);
+
+   margin-bottom: 50px;
 }
+
 
 .section
 {
@@ -73,6 +109,7 @@ body
    justify-content:flex-start;
    flex-wrap: wrap;
    gap: 8px;
+   row-gap: 15px;
 
 }
 
@@ -126,6 +163,19 @@ body
    text-align: center;
   
 
+}
+
+.big-headers
+{
+   
+   font-weight: 700;
+   font-size: 28px;
+   line-height: 1.17;
+   text-align: center;
+
+   color: var(--titles-color);
+
+   margin-bottom: 50px;
 }
 
 .section
@@ -216,6 +266,26 @@ body
    text-align: center;
   
 
+}
+
+.big-headers
+{
+   
+   font-weight: 700;
+   font-size: 36px;
+   line-height: 1.17;
+   text-align: center;
+
+   color: var(--titles-color);
+
+   margin-bottom: 50px;
+}
+
+.examples{
+   display: flex;
+   gap: 30px;
+   
+   
 }
 
 .section
@@ -316,18 +386,18 @@ body
 //    padding-top: 0;
 // }
 
-.big-headers
-{
+// .big-headers
+// {
    
-   font-weight: 700;
-   font-size: 36px;
-   line-height: 1.17;
-   text-align: center;
+//    font-weight: 700;
+//    font-size: 36px;
+//    line-height: 1.17;
+//    text-align: center;
 
-   color: var(--titles-color);
+//    color: var(--titles-color);
 
-   margin-bottom: 50px;
-}
+//    margin-bottom: 50px;
+// }
 
 .examples{
    display: flex;
