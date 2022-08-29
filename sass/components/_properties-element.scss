@@ -1,5 +1,13 @@
 //========================MOBILE==============
  @media screen and (max-width: 767px){
+   .properties-element {
+     
+      margin-bottom: 30px;
+   }
+  
+   .properties-element:last-child{
+     margin-bottom: 0px;
+   }
 
  .properties-element__title
  {

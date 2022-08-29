@@ -18,11 +18,24 @@
 .teammates-block__name
 {
    color: var(--titles-color);
+
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 1.19;
+   text-align: center;
+
+   
 }
 
 .teammates-block_position
 {
    margin-top: 10px;
+
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 19px;
+  
+   letter-spacing: 0.03em;
 }
 
 // ==================MOBILE=======================================
